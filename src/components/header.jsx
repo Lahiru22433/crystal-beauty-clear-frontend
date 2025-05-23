@@ -17,7 +17,7 @@ export default function Header() {
       </div>
       {
         isOpen &&(
-          <div className="fixed z-[100] top-0 left-0 bg-[#00000060] w-full h-screen flex">
+          <div className="fixed lg:hidden z-[100] top-0 left-0 bg-[#00000060] w-full h-screen flex">
              <div className="w-[300px] h-full bg-white flex flex-col justify-start items-start p-4">
                 <GiHamburgerMenu className="text-3xl text-accent"onClick={()=>setIsOpen(false)}/>
                 <Link to="/" className="text-xl text-accent my-4">Home</Link>
