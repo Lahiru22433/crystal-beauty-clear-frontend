@@ -7,7 +7,7 @@ import ProductCard from "../../components/product-card"
 export default function ProductsPage() {
     const [productList, setProductList] = useState([])
     const [productsLoaded, setProductsLoaded] = useState(false)
-    const [search, setSearch] = useState(" ")
+    const [search, setSearch] = useState("")
     useEffect(
         () => {
             if(!productsLoaded){
